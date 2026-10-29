@@ -103,6 +103,16 @@ def score():
     return render_template("score.html", rows=rows)
 
 
+@app.route("/reset", methods=["POST"])
+def reset_score():
+    conn = get_connection()
+    conn.execute("DELETE FROM results")
+    conn.commit()
+    conn.close()
+
+    return redirect("/score")
+
+
 if __name__ == "__main__":
     create_tables()
     app.run(debug=True)
