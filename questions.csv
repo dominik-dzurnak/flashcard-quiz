@@ -1,0 +1,9 @@
+question,answer,topic
+Which transaction posts a G/L account document?,FB50,FI
+Which transaction posts a vendor invoice?,FB60,FI
+Which transaction posts a customer invoice?,FB70,FI
+What is a Company Code?,The smallest unit with its own complete set of accounts (balance sheet and P&L),FI
+Which transaction shows cost center line items?,KSB1,CO
+What is a Controlling Area?,The unit in CO where cost accounting happens. It can have one or more Company Codes,CO
+What does sy-subrc = 0 mean?,The last statement was successful,ABAP
+How does every ABAP statement end?,With a period (.),ABAP

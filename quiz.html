@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Quiz</h1>
+
+{% if question %}
+    <div class="card">
+        <p class="topic">{{ question.topic }}</p>
+        <h2>{{ question.question }}</h2>
+
+        <button id="show-button" onclick="showAnswer()">Show answer</button>
+
+        <div id="answer" style="display: none;">
+            <p class="answer-text">{{ question.answer }}</p>
+
+            <form action="/answer" method="post">
+                <input type="hidden" name="question_id" value="{{ question.id }}">
+                <button type="submit" name="known" value="1" class="green">I knew it</button>
+                <button type="submit" name="known" value="0" class="red">I didn't know</button>
+            </form>
+        </div>
+    </div>
+{% else %}
+    <p>No questions yet. <a href="/add">Add some questions</a> first.</p>
+{% endif %}
+{% endblock %}
