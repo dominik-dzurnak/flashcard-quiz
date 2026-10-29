@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Add question</h1>
+
+<form action="/add" method="post">
+    <label>Question</label>
+    <textarea name="question" rows="3" required></textarea>
+
+    <label>Answer</label>
+    <textarea name="answer" rows="3" required></textarea>
+
+    <label>Topic</label>
+    <select name="topic">
+        <option>FI</option>
+        <option>CO</option>
+        <option>ABAP</option>
+        <option>Other</option>
+    </select>
+
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

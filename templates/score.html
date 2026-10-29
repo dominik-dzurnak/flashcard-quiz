@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Score</h1>
+
+{% if rows %}
+    <table>
+        <tr>
+            <th>Topic</th>
+            <th>Knew</th>
+            <th>Total</th>
+            <th>Success</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row.topic }}</td>
+            <td>{{ row.known }}</td>
+            <td>{{ row.total }}</td>
+            <td>{{ (row.known / row.total * 100) | round | int }} %</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No answers yet. Go to the <a href="/">quiz</a>.</p>
+{% endif %}
+{% endblock %}
