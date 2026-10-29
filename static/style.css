@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.topic {
+    color: gray;
+    font-size: 14px;
+}
+
+.answer-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2a6496;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a6496;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.red {
+    background-color: #e53935;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
