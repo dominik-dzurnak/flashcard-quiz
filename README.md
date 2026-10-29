@@ -19,5 +19,6 @@ Then open http://127.0.0.1:5000
 - Random question with a "Show answer" button
 - Mark if you knew the answer or not
 - Score by topic
+- Reset the score with one click
 
 On the first run the app loads sample questions from `questions.csv`. You can edit that file or add your own questions in the app.
