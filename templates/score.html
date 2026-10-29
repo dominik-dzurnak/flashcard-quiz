@@ -20,6 +20,10 @@
         </tr>
         {% endfor %}
     </table>
+
+    <form action="/reset" method="post" onsubmit="return confirm('Reset the whole score?');">
+        <button type="submit" class="red">Reset score</button>
+    </form>
 {% else %}
     <p>No answers yet. Go to the <a href="/">quiz</a>.</p>
 {% endif %}
